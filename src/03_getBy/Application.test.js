@@ -42,11 +42,23 @@ describe('Application1', () => {
  */
 
 // 3. getByPlaceholderText
+/*
 describe('Application2', () => {
   test('renders correclty', () => {
     render(<Application />);
 
     const nameElement3 = screen.getByPlaceholderText('name');
     expect(nameElement3).toBeInTheDocument();
+  });
+});
+*/
+
+// 4. getByText
+describe('Application3', () => {
+  test('renders correctly', () => {
+    render(<Application />);
+
+    const nameElement4 = screen.getByText(/name/i);
+    expect(nameElement4).toBeInTheDocument();
   });
 });
