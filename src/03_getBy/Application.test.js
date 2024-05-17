@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import Application from './Application';
 
-// 1. getByrole
+// 1. getByRole
 /*
 describe('Application', () => {
   test('renders correctly', () => {
@@ -66,11 +66,23 @@ describe('Application3', () => {
 */
 
 // 5. getByDisplayValue
+/*
 describe('Application4', () => {
   test('renders correctly', () => {
     render(<Application />);
 
     const nameElement5 = screen.getByDisplayValue('manoj');
     expect(nameElement5).toBeInTheDocument();
+  });
+});
+*/
+
+// 6. getByAltText
+describe('Application5', () => {
+  test('renders correctly', () => {
+    render(<Application />);
+
+    const altTextElement = screen.getByAltText('altText');
+    expect(altTextElement).toBeInTheDocument();
   });
 });

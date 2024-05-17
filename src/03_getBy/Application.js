@@ -5,6 +5,7 @@ function Application() {
     <>
       <h1>Heading1</h1>
       <h2>Heading2</h2>
+      <img src='' alt='altText' />
       <div>
         <label htmlFor='name'>Name</label>
         <input
