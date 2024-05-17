@@ -78,11 +78,22 @@ describe('Application4', () => {
 */
 
 // 6. getByAltText
+/*
 describe('Application5', () => {
   test('renders correctly', () => {
     render(<Application />);
 
     const altTextElement = screen.getByAltText('altText');
     expect(altTextElement).toBeInTheDocument();
+  });
+});
+*/
+
+// 7. getByTitle
+describe('Application6', () => {
+  test('renders correctly', () => {
+    render(<Application />);
+    const titleElement = screen.getByTitle('close');
+    expect(titleElement).toBeInTheDocument();
   });
 });
