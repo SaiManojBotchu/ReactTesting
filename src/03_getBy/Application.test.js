@@ -2,6 +2,7 @@ import { render, screen } from '@testing-library/react';
 import Application from './Application';
 
 // 1. getByrole
+/*
 describe('Application', () => {
   test('renders correctly', () => {
     render(<Application />);
@@ -23,5 +24,17 @@ describe('Application', () => {
 
     const buttonElement = screen.getByRole('button');
     expect(buttonElement).toBeInTheDocument();
+  });
+});
+*/
+
+// 2. getByLabelText
+describe('Application1', () => {
+  test('renders correctly', () => {
+    render(<Application />);
+
+    // const nameElement2 = screen.getByLabelText('Name', { selector: 'input' });
+    const nameElement2 = screen.getByLabelText('Name');
+    expect(nameElement2).toBeInTheDocument();
   });
 });
