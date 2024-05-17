@@ -3,7 +3,7 @@ import React from 'react';
 function Greet1({ name }) {
   return (
     <div>
-      <p>Hello {name}</p>
+      <p>{name ? `Hello ${name}` : 'Hello'}</p>
     </div>
   );
 }
