@@ -7,7 +7,13 @@ function Application() {
       <h2>Heading2</h2>
       <div>
         <label htmlFor='name'>Name</label>
-        <input id='name' type='text' placeholder='name' />
+        <input
+          id='name'
+          type='text'
+          placeholder='name'
+          value={'manoj'}
+          onChange={() => {}}
+        />
       </div>
       <div>
         <label htmlFor='age'>Age</label>

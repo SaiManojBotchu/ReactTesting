@@ -54,11 +54,23 @@ describe('Application2', () => {
 */
 
 // 4. getByText
+/*
 describe('Application3', () => {
   test('renders correctly', () => {
     render(<Application />);
 
     const nameElement4 = screen.getByText(/name/i);
     expect(nameElement4).toBeInTheDocument();
+  });
+});
+*/
+
+// 5. getByDisplayValue
+describe('Application4', () => {
+  test('renders correctly', () => {
+    render(<Application />);
+
+    const nameElement5 = screen.getByDisplayValue('manoj');
+    expect(nameElement5).toBeInTheDocument();
   });
 });
