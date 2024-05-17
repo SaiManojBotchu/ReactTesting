@@ -7,7 +7,7 @@ function Application() {
       <h2>Heading2</h2>
       <div>
         <label htmlFor='name'>Name</label>
-        <input id='name' type='text' />
+        <input id='name' type='text' placeholder='name' />
       </div>
       <div>
         <label htmlFor='age'>Age</label>

@@ -29,6 +29,7 @@ describe('Application', () => {
 */
 
 // 2. getByLabelText
+/* 
 describe('Application1', () => {
   test('renders correctly', () => {
     render(<Application />);
@@ -36,5 +37,16 @@ describe('Application1', () => {
     // const nameElement2 = screen.getByLabelText('Name', { selector: 'input' });
     const nameElement2 = screen.getByLabelText('Name');
     expect(nameElement2).toBeInTheDocument();
+  });
+});
+ */
+
+// 3. getByPlaceholderText
+describe('Application2', () => {
+  test('renders correclty', () => {
+    render(<Application />);
+
+    const nameElement3 = screen.getByPlaceholderText('name');
+    expect(nameElement3).toBeInTheDocument();
   });
 });
