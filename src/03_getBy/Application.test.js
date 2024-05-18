@@ -90,10 +90,21 @@ describe('Application5', () => {
 */
 
 // 7. getByTitle
+/*
 describe('Application6', () => {
   test('renders correctly', () => {
     render(<Application />);
     const titleElement = screen.getByTitle('close');
     expect(titleElement).toBeInTheDocument();
+  });
+});
+*/
+
+// 8. getByTestId
+describe('Application7', () => {
+  test('renders correctly', () => {
+    render(<Application />);
+    const customElement = screen.getByTestId('custom');
+    expect(customElement).toBeInTheDocument();
   });
 });

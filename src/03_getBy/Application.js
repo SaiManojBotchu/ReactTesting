@@ -7,6 +7,7 @@ function Application() {
       <h2>Heading2</h2>
       <img src='' alt='altText' />
       <span title='close'>close</span>
+      <div data-testid='custom'>custom element</div>
       <div>
         <label htmlFor='name'>Name</label>
         <input
