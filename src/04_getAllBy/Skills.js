@@ -4,7 +4,7 @@ function Skills({ skills }) {
   return (
     <ul>
       {skills.map(skill => (
-        <li key={skill}>{skills}</li>
+        <li key={skill}>{skill}</li>
       ))}
     </ul>
   );
