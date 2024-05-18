@@ -1,10 +1,10 @@
-import { render, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
+import { render } from './test-utils/render';
 import Parent from './Parent';
-import ThemeProvider from './useThemeProvider';
 
 describe('Parent', () => {
   test('renders correctly', () => {
-    render(<Parent />, { wrapper: ThemeProvider });
+    render(<Parent />);
     const headingElement = screen.getByRole('heading');
     expect(headingElement).toHaveTextContent('Dark mode');
   });
