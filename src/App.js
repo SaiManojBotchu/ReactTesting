@@ -3,7 +3,7 @@ import React from 'react';
 // import List from './06_queryBy/List';
 // import Counter from './08_user-event/Counter';
 import Parent from './09_providers/Parent';
-import ThemeProvider from './useThemeProvider';
+import ThemeProvider from './09_providers/useThemeProvider';
 
 function App() {
   return (
